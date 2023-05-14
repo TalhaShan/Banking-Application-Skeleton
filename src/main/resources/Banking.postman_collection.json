@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "ad0b7383-c1e0-463f-9b65-214523b75820",
+		"name": "Banking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"talha\",\r\n    \"balance\":\"500\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MakeTransfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sourceAccount\": \"ea9521a5-0e01-4d21-a77f-2abe25a9ea03\",\r\n    \"targetAccount\": \"8ed32ef8-31c2-4f35-8eff-b44adb172020\",\r\n    \"amount\": \"100\",\r\n    \"currency\": \"AED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/transactions/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"targetAccountNo\": \"8ed32ef8-31c2-4f35-8eff-b44adb172020\",\r\n    \"amount\": \"20\",\r\n    \"currency\": \"USD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/transactions/deposit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WithDraw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"targetAccountNo\": \"8ed32ef8-31c2-4f35-8eff-b44adb172020\",\r\n    \"amount\": \"30\",\r\n    \"currency\": \"AED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/transactions/withdraw",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accountNo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/accounts?accountNo=8ed32ef8-31c2-4f35-8eff-b44adb172020",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					],
+					"query": [
+						{
+							"key": "accountNo",
+							"value": "8ed32ef8-31c2-4f35-8eff-b44adb172020"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
