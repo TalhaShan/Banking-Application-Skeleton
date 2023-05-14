@@ -4864,3 +4864,44 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'banking'
 2023-05-14T20:48:07.089+05:00  INFO 5312 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-14T20:48:07.093+05:00  INFO 5312 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-14T20:48:07.104+05:00  INFO 5312 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-14T21:44:55.085+05:00  INFO 4028 --- [restartedMain] c.bankingapplication.BankingApplication  : Starting BankingApplication using Java 17.0.2 with PID 4028 (C:\Users\Talha Shan\IdeasProject\Banking-Application-Skeleton\target\classes started by Talha Shan in C:\Users\Talha Shan\IdeasProject\Banking-Application-Skeleton)
+2023-05-14T21:44:55.088+05:00  INFO 4028 --- [restartedMain] c.bankingapplication.BankingApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-05-14T21:44:55.336+05:00  INFO 4028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-14T21:44:55.336+05:00  INFO 4028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-14T21:44:56.662+05:00  INFO 4028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-14T21:44:56.728+05:00  INFO 4028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2023-05-14T21:44:57.342+05:00  INFO 4028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-14T21:44:57.350+05:00  INFO 4028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-14T21:44:57.351+05:00  INFO 4028 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-14T21:44:57.420+05:00  INFO 4028 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-14T21:44:57.421+05:00  INFO 4028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2084 ms
+2023-05-14T21:44:57.789+05:00  INFO 4028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-14T21:44:58.198+05:00  INFO 4028 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61c56cb8
+2023-05-14T21:44:58.201+05:00  INFO 4028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-14T21:44:58.561+05:00  INFO 4028 --- [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2023-05-14T21:44:58.837+05:00  INFO 4028 --- [restartedMain] liquibase.changelog                      : Reading from banking.DATABASECHANGELOG
+2023-05-14T21:44:58.919+05:00  INFO 4028 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-05-14T21:44:58.988+05:00  INFO 4028 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14T21:44:59.028+05:00  INFO 4028 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-14T21:44:59.249+05:00  INFO 4028 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-14T21:44:59.251+05:00  WARN 4028 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-05-14T21:45:00.015+05:00  INFO 4028 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14T21:45:00.028+05:00  INFO 4028 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-14T21:45:00.456+05:00  WARN 4028 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-14T21:45:01.015+05:00  INFO 4028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-14T21:45:01.021+05:00  INFO 4028 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 12 endpoint(s) beneath base path '/actuator'
+2023-05-14T21:45:01.109+05:00  INFO 4028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-14T21:45:01.125+05:00  INFO 4028 --- [restartedMain] c.bankingapplication.BankingApplication  : Started BankingApplication in 6.912 seconds (process running for 8.958)
+2023-05-14T21:48:24.163+05:00  INFO 4028 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14T21:48:24.164+05:00  INFO 4028 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-14T21:48:24.166+05:00  INFO 4028 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-14T21:48:24.485+05:00  INFO 4028 --- [http-nio-8080-exec-2] c.b.s.impl.TransactionServiceImpl        : calling deposit service complete: 168408290433275461248
+2023-05-14T21:48:32.574+05:00  WARN 4028 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.bankingapplication.controller.AccountController.createAccount(com.bankingapplication.model.request.AccountCreationRequest): [Field error in object 'accountCreationRequest' on field 'balance': rejected value [0.0]; codes [Positive.accountCreationRequest.balance,Positive.balance,Positive.double,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [accountCreationRequest.balance,balance]; arguments []; default message [balance]]; default message [Transfer amount must be positive]] ]
+2023-05-14T21:49:04.523+05:00  INFO 4028 --- [http-nio-8080-exec-5] c.b.controller.TransactionController     : calling transaction/deposit: 168408294452363525112
+2023-05-14T21:49:04.554+05:00  INFO 4028 --- [http-nio-8080-exec-5] c.b.s.impl.TransactionServiceImpl        : calling deposit service complete: 168408294452363525112
+2023-05-14T21:49:32.304+05:00  INFO 4028 --- [http-nio-8080-exec-6] c.b.controller.TransactionController     : calling transaction/withdraw: 168408297230445755762
+2023-05-14T21:49:32.309+05:00 ERROR 4028 --- [http-nio-8080-exec-6] c.b.s.impl.TransactionServiceImpl        : calling withdraw service failed: 168408297230445755762
+2023-05-14T21:49:39.772+05:00  INFO 4028 --- [http-nio-8080-exec-7] c.b.controller.TransactionController     : calling transaction/withdraw: 168408297977268900672
+2023-05-14T21:49:39.822+05:00  INFO 4028 --- [http-nio-8080-exec-7] c.b.s.impl.TransactionServiceImpl        : calling withdraw service complete: 168408297977268900672
+2023-05-14T21:50:26.158+05:00  INFO 4028 --- [http-nio-8080-exec-9] c.b.controller.TransactionController     : calling transaction/transfer: 168408302615896907608
+2023-05-14T21:50:26.173+05:00  INFO 4028 --- [http-nio-8080-exec-9] c.b.s.impl.TransactionServiceImpl        : calling transfer service complete: 168408302615896907608

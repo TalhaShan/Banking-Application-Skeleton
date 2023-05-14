@@ -1,3 +1,5 @@
 FROM mysql:latest
-ENV MYSQL_ROOT_PASSWORD=my-secret-pw
-COPY schema.sql /docker-entrypoint-initdb.d/
+ENV MYSQL_DATABASE=banking
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=Lambda471471$#
+ADD schema.sql /docker-entrypoint-initdb.d
