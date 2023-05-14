@@ -1,13 +1,13 @@
 version: '3'
 services:
   app:
-    build: .
+    build: banking-application
     ports:
       - "8080:8080"
     depends_on:
       - db
   db:
-    build: ./db
+    build: banking-image
     environment:
       MYSQL_DATABASE: banking
       MYSQL_USER: root
