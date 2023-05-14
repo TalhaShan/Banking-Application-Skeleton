@@ -46,7 +46,7 @@ More locations can be added with the 'searchPath' parameter.
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
-	at com.transaction.bankingapplication.BankingApplication.main(BankingApplication.java:10)
+	at BankingApplication.main(BankingApplication.java:10)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
