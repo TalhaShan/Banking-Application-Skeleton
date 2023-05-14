@@ -1,5 +1,6 @@
 FROM mysql:latest
-ENV MYSQL_DATABASE=banking
-ENV MYSQL_USER=root
-ENV MYSQL_PASSWORD=Lambda471471$#
+ENV MYSQL_DATABASE=mydb
+ENV MYSQL_USER=myuser
+ENV MYSQL_PASSWORD=mypass
+ENV MYSQL_ROOT_PASSWORD=rootpass
 ADD schema.sql /docker-entrypoint-initdb.d
